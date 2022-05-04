@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar ___///////////////////////////////////////////////////////////// */
+
+/*-- Navigation Hover Effects --*/
+
+.bs4header a.nav-link::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  transition: 0.2s;
+}
+.bs4header a.nav-link:hover::before {
+  width: 100%;
+}
+
+.bs4header {
+  background-color: #0c1222;
+}
+.container {
+  padding: 15px;
+}
+.navbar-brand {
+  font-size: 2rem !important;
+}
+.nav-item a {
+  font-weight: bold;
+  margin-left: 7px;
+}
+.buttons {
+  margin-left: 30px;
+}
+.buttons button {
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  border: 2px solid white;
+  color: white;
+  background-color: #0c1222;
+  font-weight: bold;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+@media screen and (max-width: 425px) {
+  .navbar-brand > b > i {
+    font-size: 17px;
+  }
+  .buttons {
+    margin-left: 0px;
+  }
+  .buttons a {
+    text-decoration: none;
+  }
+  .buttons a button {
+    margin-bottom: 5px;
+    margin-left: 0px;
+    display: block;
+  }
+}
+#main {
+  background-color: #34495e;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  background-color: none;
+  width: 60%;
+  height: auto;
+  color: black;
+  text-shadow: 0px 0px 3px white;
+
+  border-radius: 15px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: white;
+  padding: 30px 80px 30px 80px;
+  box-shadow: 0px 0px 10px black;
+}
+.inputField .form-control {
+  background-color: lightgrey;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px black;
+  margin-bottom: 15px;
+}
+.dropdown_bar {
+  height: auto;
+}
+.buttonLast {
+  background-color: #0c1222;
+  width: 200px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+  padding: 5px;
+  letter-spacing: 2px;
+}
+.buttonLast:hover {
+  background-image: linear-gradient(to right, #241e4e, #576a8a, #29188d);
+  width: 200px;
+  text-align: center;
+  border: 3px solid rgb(209, 179, 8);
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  color: rgb(209, 179, 8);
+  padding: 5px;
+  letter-spacing: 2px;
+}
+.buttonLast:focus {
+  background-image: linear-gradient(to right, #241e4e, #576a8a, #29188d);
+  width: 200px;
+  text-align: center;
+  border: 3px solid rgb(209, 179, 8);
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  color: rgb(209, 179, 8);
+  padding: 5px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 425px) {
+  .login {
+    width: 100%;
+    padding: 20px;
+  }
+  .form-control {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>How To create Bootstrap 4 Navbar With Starter Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header class="bs4header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#"
+            ><b><i>Town Committee Mithi</i></b></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#bs4navbar"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="bs4navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link active" href="./contact.html">Contact Us</a>
+              </li>
+              <li class="buttons">
+                <a href="./login.html"> <button>LogIn</button> </a>
+                <a href="./signup.html"> <button>Sign Up</button></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- box for message ///////////////////////////////////////////////////////// -->
+
+    <section class="contact">
+      <div class="layout">
+        <div class="text-center">
+          <h3 class="section-title">Contact Us</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            accumsan venenatis lectus sed sollicitudin. Duis in odio ex. Sed
+            elementum varius enim. In vel tincidunt lorem. Donec gravida felis
+            vitae ipsum pharetra maximus.
+          </p>
+        </div>
+        <div class="grid-8 form">
+          <form
+            action="php/email.php"
+            method="post"
+            id="contact_form"
+            name="contactForm"
+          >
+            <div class="form-inline clearfix">
+              <div class="form-group grid-6">
+                <input
+                  type="text"
+                  placeholder="name"
+                  id="exampleInputName"
+                  name="name"
+                  class="form-control w-100"
+                />
+              </div>
+              <div class="form-group grid-6">
+                <input
+                  type="email"
+                  placeholder="email address"
+                  id="exampleInputEmail"
+                  name="email"
+                  class="form-control w-100"
+                />
+              </div>
+              <div class="form-group grid-6">
+                <input
+                  type="text"
+                  placeholder="subject"
+                  id="exampleInputSubject"
+                  name="subject"
+                  class="form-control w-100"
+                />
+              </div>
+              <div class="form-group grid-6">
+                <input
+                  type="text"
+                  placeholder="company"
+                  id="exampleInputCompany"
+                  name="company"
+                  class="form-control w-100"
+                />
+              </div>
+              <div class="form-group grid-12">
+                <textarea
+                  placeholder="message"
+                  id="exampleInputMessage"
+                  rows="3"
+                  name="message"
+                  class="form-control w-100"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div style="display: none" class="success" id="mail_success">
+                Your message has been sent successfully.
+              </div>
+              <!-- success message -->
+              <div style="display: none" class="error" id="mail_fail">
+                Sorry, error occured this time sending your message.
+              </div>
+              <!-- error message -->
+            </div>
+            <div id="submit" class="form-group grid-12">
+              <input
+                type="submit"
+                value="send"
+                class="btn btn-lg costom-btn"
+                id="send_message"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- /.col-xs-12 .col-sm-offset-2 .col-sm-8 -->
+        <div class="grid-12">
+          <div class="icon-text">
+            <span>find us on</span>
+          </div>
+          <!-- /.icon-text -->
+          <div class="icon-holder">
+            <ul>
+              <li>
+                <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"
+                  ><i class="fa fa-google-plus"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><i class="fa fa-behance"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.icon-holder -->
+        </div>
+        <!-- /.col-xs-12 -->
+      </div>
+    </section>
+  </body>
+</html>

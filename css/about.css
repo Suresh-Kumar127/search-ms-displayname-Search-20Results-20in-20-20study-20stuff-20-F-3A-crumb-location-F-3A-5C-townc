@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar ___///////////////////////////////////////////////////////////// */
+
+/*-- Navigation Hover Effects --*/
+
+.bs4header a.nav-link::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  transition: 0.2s;
+}
+.bs4header a.nav-link:hover::before {
+  width: 100%;
+}
+
+.bs4header {
+  background-color: #0c1222;
+}
+.container {
+  padding: 15px;
+}
+.navbar-brand {
+  font-size: 2rem !important;
+}
+.nav-item a {
+  font-weight: bold;
+  margin-left: 7px;
+}
+.buttons {
+  margin-left: 30px;
+}
+.buttons button {
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  border: 2px solid white;
+  color: white;
+  background-color: #0c1222;
+  font-weight: bold;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+@media screen and (max-width: 425px) {
+  .carousel-item {
+    height: 200px;
+    width: 100%;
+  }
+  .navbar-brand > b > i {
+    font-size: 17px;
+  }
+  .buttons {
+    margin-left: 0px;
+  }
+  .buttons a {
+    text-decoration: none;
+  }
+  .buttons a button {
+    margin-bottom: 5px;
+    margin-left: 0px;
+    display: block;
+  }
+}
+
+/* navbaaaaaaaaaaaaaaar ends */
+.about-content {
+  background-color: #34495e;
+  height: auto;
+}
+/* new section */
+.image img {
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
+.container p {
+  font-size: 16px;
+  font-weight: bold;
+  color: lightgrey;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+.chair_name {
+  color: white;
+}
+/* section new section new ///////////////////////////////////////////////////// */
+.second_section {
+  background-color: #697f94;
+  height: auto;
+}
+.second_section_inner h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+#golden {
+  color: black;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+/* foooooooooooooooooooooooooooooooooooooooooooter  */
+footer {
+  background-color: #050b16;
+  color: white;
+  padding: 20px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+footer .inner-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer a {
+  color: lightgrey;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  color: white;
+}
+.location h6 {
+  font-weight: 700;
+}
+.location p {
+  color: lightgrey;
+  font-size: 12px;
+}
